@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_main"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="#ffffff"
+    android:padding="10dp"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:id="@+id/title_relativelayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:clickable="true"
+        android:padding="5dp">
+
+        <TextView
+            android:id="@+id/numberTextView"
+            android:layout_width="70dp"
+            android:height="70dp"
+            android:layout_height="wrap_content"
+            android:background="@drawable/circle_textview"
+            android:clickable="false"
+            android:gravity="center"
+            android:text="1"
+            android:textColor="#EBEFEC"
+            android:textSize="29sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/titleTextView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="30px"
+            android:layout_toRightOf="@id/numberTextView"
+            android:clickable="false"
+            android:textColor="#1d953f"
+            android:textSize="29sp" />
+
+        <ImageView
+            android:id="@+id/arrowImageView"
+            android:layout_width="48px"
+            android:layout_height="27px"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:background="@mipmap/a"
+            android:clickable="false"
+            android:scaleType="fitCenter" />
+
+    </RelativeLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_below="@id/title_relativelayout"
+        android:background="@color/colorAccent"
+        android:clickable="false"></View>
+
+    <RelativeLayout
+        android:id="@+id/contentRelativeLayout"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:visibility="gone"></RelativeLayout>
+</LinearLayout>
